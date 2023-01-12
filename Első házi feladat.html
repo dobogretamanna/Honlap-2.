@@ -1,11 +1,17 @@
 <html>
     <head>
-        <table style="width: 400px; height: 100px; margin: auto;">
+        <table style="background-color: white; width: 400px; height: 100px; margin: auto;">
             <tr>
-                <th>Betűk</th>
+                <td>Tükrözés</td>
             </tr>
         </table>
-        <br>
+    </head>
+    <head>
+        <table style="width: 400px; height: 100px; margin: auto;">
+            <tr>
+                <th>Eredeti</th>
+            </tr>
+        </table>
     </head>
     <body>
         <table style="width: 400px; height: 500px; margin: auto;">
@@ -28,35 +34,77 @@
             </tr>
         </table>
     </body>
+    <br>
+    <br>
+    <head>
+        <table style="width: 400px; height: 100px; margin: auto;">
+            <tr>
+                <th>Tükörkép</th>
+            </tr>
+        </table>
+    </head>
+    <body>
+        <table style="width: 400px; height: 500px; margin: auto;">
+            <tr>
+                <td rowspan="2">c</td>
+                <td>b</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td rowspan="2">f</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <td>g</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td colspan="2">h</td>
+            </tr>
+        </table>
+    </body>
     <style>
         body{
             background-image: url(háttérkép9.jpg);
         }
-        table{
-            border: 10px;
-            border-color: black;
-            background-origin: padding-box;
-            border: 10px black;
-            border-radius: 10px;
-            border-bottom: 10px;
-            background-color: grey;
-        }
-        table, th, td, tr{
-            border: 1px solid black;
-            border-collapse: separate;
-            vertical-align: middle;
-            text-align: center;
-        }
-        tr{
-            border: 5px black;
-            vertical-align: middle;
-        }
-        table, td {
-                border-width: 10px 5px 15px;
+        table, th, td {
+                border: 1px;
+                border-collapse: separate;
             }
-        body{
-                background-color: rgb(83, 95, 99);
+            th {
+                background-color: rgb(126, 156, 163);
+                font-weight: bold;
+                font-size: larger;
+                border-top: 100px;
+            }
+            tr td:hover {
+                background-color: rgb(126, 156, 163);
+            }
+            table {
+                width: 800px;
+                height: 300px;
+            }
+            td {
+                text-align: center;
+                vertical-align: center;
+                border-radius: 20px;
+                border-color: black;
+                height: 70px;
+                background-color: rgb(128, 110, 132);
+                box-shadow: 2px 2px 2px black;
+            }
+            th {
+                border-radius: 20px;
+                border-bottom: 20px;
+                height: 100px;
+                font-weight: bold;
+                font-size: larger;
+                border-top: 100px;
+                box-shadow: 2px 2px 2px black;
+            }
+            tr {
+                vertical-align: middle;
             }
     </style>
-
 </html>
