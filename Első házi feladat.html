@@ -1,118 +1,105 @@
 <html>
-    <head>
-        <table style="background-color: grey; border-radius: 10px; width: 800px; height: 300px; margin: auto; ">
-            <tr>
-                <td>Tükrözés</td>
-            </tr>
-        </table>
-    </head>
-    <br>
-    <br>
-    <table style="width: 1000px; height: 500px;">
-        <tr>
-            <td>
-                <head>
-                    <table style="width: 400px; height: 100px; margin-right: 400px; margin-left: 200px;">
-                        <tr>
-                            <th>Eredeti</th>
-                        </tr>
-                    </table>
-                </head>
-                <body>
-                    <table style="width: 400px; height: 500px; margin-right: 400px; margin-left: 200px;">
-                        <tr>
-                            <td>a</td>
-                            <td>b</td>
-                            <td rowspan="2">c</td>
-                        </tr>
-                        <tr>
-                            <td>d</td>
-                            <td rowspan="2">f</td>
-                        </tr>
-                        <tr>
-                            <td>e</td>
-                            <td>g</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">h</td>
-                            <td>i</td>
-                        </tr>
-                    </table>
-                </body>
-
-                <head>
-                    <table style="width: 400px; height: 100px; margin-right: 800px; margin-left: 800px; margin-top: 20px;">
-                        <tr>
-                            <th>Tükörkép</th>
-                        </tr>
-                    </table>
-                </head>
-                <body>
-                    <table style="width: 400px; height: 500px; margin-right: 800px; margin-left: 800px; margin-top: 20px;">
-                        <tr>
-                            <td rowspan="2">c</td>
-                            <td>b</td>
-                            <td>a</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">f</td>
-                            <td>d</td>
-                        </tr>
-                        <tr>
-                            <td>g</td>
-                            <td>e</td>
-                        </tr>
-                        <tr>
-                            <td>i</td>
-                            <td colspan="2">h</td>
-                        </tr>
-                    </table>
-                </body>
-            </td>
-        </tr>
-    </table>
-    
-    <style>
-        body{
-            background-image: url(háttérkép9.jpg);
-        }
-        table, th, td {
-                border: 1px;
-                border-collapse: separate;
-            }
-            th {
-                background-color: rgb(126, 156, 163);
-                font-weight: bold;
-                font-size: larger;
-                border-top: 100px;
-            }
-            tr td:hover {
-                background-color: rgb(126, 156, 163);
-            }
-            table {
-                width: 800px;
-                height: 300px;
-            }
-            td {
-                text-align: center;
-                vertical-align: center;
-                border-radius: 20px;
-                border-color: black;
-                height: 70px;
-                background-color: rgb(128, 110, 132);
-                box-shadow: 2px 2px 2px black;
-            }
-            th {
-                border-radius: 20px;
-                border-bottom: 20px;
-                height: 100px;
-                font-weight: bold;
-                font-size: larger;
-                border-top: 100px;
-                box-shadow: 2px 2px 2px black;
-            }
-            tr {
-                vertical-align: middle;
-            }
-    </style>
+    <head></head>
+    <body>
+        <center>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Tükrözés</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <table class="kp">
+                                <tbody>
+                                    <tr>
+                                        <td class="o" colspan="3">Eredeti</td>
+                                    </tr>
+                                    <tr>
+                                        <td>a</td>
+                                        <td>b</td>
+                                        <td rowspan="2">c</td>
+                                    </tr>
+                                    <tr>
+                                        <td>d</td>
+                                        <td rowspan="2">f</td>
+                                    </tr>
+                                    <tr>
+                                        <td>e</td>
+                                        <td>g</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">h</td>
+                                        <td>i</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                        <th>
+                            <table class="kp">
+                                <tbody>
+                                    <tr>
+                                        <td class="o" colspan="3">Tükörkép</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">c</td>
+                                        <td>b</td>
+                                        <td>a</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">f</td>
+                                        <td>d</td>
+                                    </tr>
+                                    <tr>
+                                        <td>g</td>
+                                        <td>e</td>
+                                    </tr>
+                                    <tr>
+                                        <td>i</td>
+                                        <td colspan="2">h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <style>
+                table{
+                    border-spacing: 10px;
+                }
+                table.kp{
+                    border-radius: 12px;
+                    border: dashed 2px grey;
+                }
+                td{
+                    font-size: 20px;
+                    border-radius: 6px;
+                    padding: 30px;
+                    color: black;
+                    text-align: center;
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(109, 131, 150);
+                    box-shadow: 2px 2px 2px grey;
+                }
+                td.o{
+                    background-color: aliceblue;
+                    background-size: 100% 100%;
+                }
+                a{
+                    width: 100px;
+                    margin: auto;
+                    color: white;
+                    padding: 12px 0;
+                    border: 5px black;
+                }
+                body{
+                    background-image: url(háttérkép9.jpg);
+                }
+            </style>
+        </center>
+    </body>
 </html>
