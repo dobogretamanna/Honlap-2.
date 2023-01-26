@@ -2,11 +2,13 @@
     <head></head>
     <body>
         <center>
-            <table>
-                <tbody>
+            <table style="background-color: rgba(127, 164, 175, 0.568); width: 1550px; height: auto; border-radius: 20px;">
                     <tr>
                         <td colspan="2">Billentyűzet</td>
                     </tr>
+            </table>
+            <table style="background-color: transparent; width: 1550px; height: auto;">
+                <tbody>
                     <tr>
                         <th></th>
                     </tr>
@@ -14,7 +16,7 @@
                         <th>
                             <table class="kp">
                                 <tbody>
-                                    <tr>
+                                    <tr style="background-color: rgb(216, 203, 166);">
                                         <td class="o" colspan="16">Keypad</td>
                                     </tr>
                                     <tr>
@@ -75,24 +77,31 @@
                             <table class="kp">
                                 <tbody>
                                     <tr>
-                                        <td class="o" colspan="3">Tükörkép</td>
+                                        <td>Num Lock</td>
+                                        <td>/</td>
+                                        <td>*</td>
+                                        <td>-</td>
                                     </tr>
                                     <tr>
-                                        <td rowspan="2">c</td>
-                                        <td>b</td>
-                                        <td>a</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td rowspan="2">+</td>
                                     </tr>
                                     <tr>
-                                        <td rowspan="2">f</td>
-                                        <td>d</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
                                     </tr>
                                     <tr>
-                                        <td>g</td>
-                                        <td>e</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td rowspan="2">Enter</td>
                                     </tr>
                                     <tr>
-                                        <td>i</td>
-                                        <td colspan="2">h</td>
+                                        <td colspan="2">0</td>
+                                        <td>Del</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -102,11 +111,11 @@
             </table>
             <style>
                 table{
-                    border-spacing: 10px;
+                    border-spacing: 5px;
                 }
                 table.kp{
                     border-radius: 12px;
-                    border: dashed 2px grey;
+                    border: dotted 5px grey;
                 }
                 td{
                     font-size: 20px;
@@ -116,11 +125,10 @@
                     text-align: center;
                     width: 20px;
                     height: 20px;
-                    background-color: rgb(109, 131, 150);
                     box-shadow: 2px 2px 2px grey;
                 }
                 td.o{
-                    background-color: aliceblue;
+                    background-color: rgba(13, 41, 61, 0.568);
                     background-size: 100% 100%;
                 }
                 a{
@@ -133,6 +141,12 @@
                 body{
                     background-image: url(háttérkép9.jpg);
                 }
+                tbody.kp{
+                    background-color: rgb(241, 185, 139);
+                }
+                td{
+                    background-color: rgb(176, 204, 197, 0.568);
+                }
             </style>
         </center>
     </body>
@@ -144,22 +158,4 @@
 
 
 
-
-<tr style="box-sizing: 70%;">
-    <td>Esc</td>
-    <td style="background-color: transparent; box-shadow:none"></td>
-    <td>F1</td>
-    <td>F2</td>
-    <td>F3</td>
-    <td>F4</td>
-    <td style="background-color: transparent; box-shadow:none"></td>
-    <td>F5</td>
-    <td>F6</td>
-    <td>F7</td>
-    <td>F8</td>
-    <td style="background-color: transparent; box-shadow:none"></td>
-    <td>F9</td>
-    <td>F10</td>
-    <td>F11</td>
-    <td>F12</td>
-</tr>
+background-color: rgb(150, 144, 109);-------td{}
